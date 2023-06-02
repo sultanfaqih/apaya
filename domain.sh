@@ -7,10 +7,10 @@ apt install socat -y
 apt install jq curl -y
 sub=$(</dev/urandom tr -dc a-z | head -c4)
 clear
-DOMAIN=franata775.my.id
-SUB_DOMAIN=${sub}.franata775.my.id
-CF_ID=franata868@gmail.com
-CF_KEY=c9cf357cfe4d396b144b5f34024c4d41
+DOMAIN=sshserver.my.id
+SUB_DOMAIN=${sub}.sshserver.my.id
+CF_ID=iis.ismawati0709@gmail.com
+CF_KEY=b212838997384ce5c84952e7e6df976e4eb2b
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
 echo "Updating DNS for ${SUB_DOMAIN}..."

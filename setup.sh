@@ -144,7 +144,7 @@ sleep 2
 
 clear
 
-wget https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/sultanfaqih/apaya/main/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 
 cd /usr/bin
 

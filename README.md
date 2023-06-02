@@ -16,7 +16,7 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 ## Installation Link if you don't have a domain<br>
 
   ```html
-sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://www.foryouvpn.my.id/setup2.sh && chmod +x setup2.sh && ./setup2.sh
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/sultanfaqih/apaya/main/setup.sh && chmod +x setup.sh && ./setup.sh
 
   ```
 ## Features:

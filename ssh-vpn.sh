@@ -20,7 +20,7 @@ commonname=none
 email=franata868@gmail.com
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/password.txt"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/sultanfaqih/apaya/main/password.txt"
 chmod +x /etc/pam.d/common-password
 
 # go to root

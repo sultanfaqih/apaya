@@ -1,6 +1,3 @@
-# Decrypted by K-fuscator
-
-# Github- https://github.com/KasRoudra/k-fuscator
 
 
 
@@ -52,7 +49,7 @@ CEKEXPIRED () {
 
 today=$(date -d +1day +%Y-%m-%d)
 
-Exp1=$(curl -sS https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/permission/ip | grep $MYIP | awk '{print $3}')
+Exp1=$(curl -sS https://raw.githubusercontent.com/sultanfaqih/IP/main/ip | grep $MYIP | awk '{print $3}')
 
 if [[ $today < $Exp1 ]]; then
 
@@ -68,7 +65,7 @@ fi
 
 }
 
-IZIN=$(curl -sS https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/permission/ip | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/sultanfaqih/IP/main/ip | awk '{print $4}' | grep $MYIP)
 
 if [ $MYIP = $IZIN ]; then
 
@@ -188,13 +185,13 @@ sleep 2
 
 clear
 
-wget https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/sultanfaqih/apaya/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 
 sleep 2
 
 clear
 
-wget https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
+wget https://raw.githubusercontent.com/sultanfaqih/apaya/main/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
@@ -206,17 +203,17 @@ sleep 2
 
 clear
 
-wget https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/sultanfaqih/apaya/main/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 
 cd /usr/bin
 
-wget -O xp "https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/xp.sh"
+wget -O xp "https://raw.githubusercontent.com/sultanfaqih/apaya/main/xp.sh"
 
 chmod +x xp
 
 sleep 1
 
-wget -q -O /usr/bin/notramcpu "https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/Menu%20Final/Lain/notramcpu" && chmod +x /usr/bin/notramcpu
+wget -q -O /usr/bin/notramcpu "https://raw.githubusercontent.com/sultanfaqih/apaya/main/Menu%20Final/Lain/notramcpu" && chmod +x /usr/bin/notramcpu
 
 cd
 
@@ -226,13 +223,13 @@ rm -f /root/insshws.sh
 
 rm -f /root/xraymode.sh
 
-wget -q -O ins-xray.sh https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget -q -O ins-xray.sh https://raw.githubusercontent.com/sultanfaqih/apaya/main/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 
 sleep 1
 
-wget -q -O senmenu.sh https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/senmenu.sh && chmod +x senmenu.sh && ./senmenu.sh
+wget -q -O senmenu.sh https://raw.githubusercontent.com/sultanfaqih/apaya/main/senmenu.sh && chmod +x senmenu.sh && ./senmenu.sh
 
-wget -q -O slow.sh https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/slow.sh && chmod +x slow.sh && ./slow.sh
+wget -q -O slow.sh https://raw.githubusercontent.com/sultanfaqih/apaya/main/slow.sh && chmod +x slow.sh && ./slow.sh
 
 mkdir /root/akun
 

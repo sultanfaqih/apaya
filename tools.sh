@@ -35,7 +35,7 @@ sudo apt install -y screen curl jq bzip2 gzip coreutils rsyslog iftop \
  openssl fail2ban lolcat tmux \
  stunnel4 vnstat squid3 \
  dropbear  libsqlite3-dev \
- socat cron bash-completion ntpdate xz-utils sudo apt-transport-https \
+ socat cron bash-completion netfilter-persistent ntpdate xz-utils sudo apt-transport-https \
  gnupg2 dnsutils lsb-release chrony
 
 curl -sSL https://deb.nodesource.com/setup_16.x | bash - 

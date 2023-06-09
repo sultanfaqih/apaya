@@ -88,7 +88,7 @@ echo -e "$yell[SERVICE]$NC Restart All service"
 systemctl daemon-reload
 sleep 1
 echo -e "[ ${green}ok${NC} ] Enable & restart xray "
-systemctl daemin-reload
+systemctl daemon-reload
 systemctl restart nginx
 systemctl enable runn
 systemctl restart runn

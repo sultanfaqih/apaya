@@ -110,6 +110,17 @@ clear
 
 clear
 
+echo -e "════════════════════════════════════════" | lolcat
+echo -e "█████████" | lolcat
+echo -e "█▄█████▄█╔╦╗╔═╦╗╔══╗╔═╗╔═╗╔═╗─╔╗╔═╗╔═╗╔══╗" | lolcat
+echo -e "█▼▼▼▼▼   ║╔╝╚╗║║╚╗╔╝║╬║║╬║║║║─║║║╦╝║╔╝╚╗╔╝ " | lolcat
+echo -e "█.       ║╚╗╔╩╗║─║║─║╔╝║╗╣║║║╔╣║║╩╗║╚╗─║║─ " | lolcat
+echo -e "█▲▲▲▲▲   ╚╩╝╚══╝─╚╝─╚╝─╚╩╝╚═╝╚═╝╚═╝╚═╝─╚╝─ " | lolcat
+echo -e "█████████ " | lolcat
+echo -e " ██ ██ " | lolcat
+echo -e "════════════════════════════════════════" | lolcat
+echo -e "            [Free Internet]" | lolcat
+echo -e "════════════════════════════════════════" | lolcat
     echo -e "${red}    ♦️${NC} ${green} CUSTOM SETUP DOMAIN VPS     ${NC}"
     echo -e "${red}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
     echo "1. Use Domain From Script / Gunakan Domain Dari Script"
@@ -120,7 +131,7 @@ clear
     if test $dom -eq 1; then
     clear
     apt install jq curl -y
-    wget -q -O /root/cf "https://raw.githubusercontent.com/sultanfaqih/apaya/main/domain.sh" >/dev/null 2>&1
+    wget -q -O /root/cf "https://raw.githubusercontent.com/sultanfaqih/tes/main/cf" >/dev/null 2>&1
     chmod +x /root/cf
     bash /root/cf | tee /root/install.log
     echo "DONE"

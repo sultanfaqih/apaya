@@ -110,11 +110,37 @@ clear
 
 clear
 
-echo "Add Domain for vmess/vless/trojan dll"
+    echo -e "${red}    ♦️${NC} ${green} CUSTOM SETUP DOMAIN VPS     ${NC}"
+    echo -e "${red}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+    echo "1. Use Domain From Script / Gunakan Domain Dari Script"
+    echo "2. Choose Your Own Domain / Pilih Domain Sendiri"
+    echo -e "${red}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+    read -rp "Choose Your Domain Installation : " dom 
 
-wget https://raw.githubusercontent.com/sultanfaqih/apaya/main/domain.sh && chmod +x domain.sh && ./domain.sh
-
-sleep 1
+    if test $dom -eq 1; then
+    clear
+    apt install jq curl -y
+    wget -q -O /root/cf "https://raw.githubusercontent.com/sultanfaqih/apaya/main/domain.sh" >/dev/null 2>&1
+    chmod +x /root/cf
+    bash /root/cf | tee /root/install.log
+    echo "DONE"
+    sleep 3
+    elif test $dom -eq 2; then
+    read -rp "Enter Your Domain : " domen 
+    echo $domen > /root/domain
+    echo "$domen" > /root/domain
+    echo "$domen" > /root/scdomain
+    echo "$domen" > /etc/xray/domain
+    echo "$domen" > /etc/xray/scdomain
+    echo "IP=$domen" > /var/lib/ipvps.conf
+    cp /root/domain /etc/xray/domain
+    else 
+    echo "Not Found Argument"
+    exit 1
+    fi
+    echo -e "${GREEN}Done!${NC}"
+    sleep 2
+    clear
 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 

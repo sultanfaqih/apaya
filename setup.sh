@@ -1,3 +1,4 @@
+#!/bin/bash
 MYIP=$(curl -sS ipv4.icanhazip.com)
 red='\e[1;31m'
 green='\e[0;32m'

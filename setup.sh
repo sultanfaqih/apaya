@@ -129,7 +129,7 @@ echo -e "═══════════════════════�
     echo "$domen" > /root/scdomain
     echo "$domen" > /etc/xray/domain
     echo "$domen" > /etc/xray/scdomain
-    echo "IP=$domen" > /root/domain
+    echo "IP=$domen" > /var/lib/ipvps.conf
     cp /root/domain /etc/xray/domain
     else 
     echo "Not Found Argument"

@@ -22,7 +22,7 @@ echo -e "\e[31mPermission Denied!\e[0m";
 exit 0
 fi
 clear
-source /var/lib/scrz-prem/ipvps.conf
+source /var/lib/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
@@ -128,4 +128,3 @@ echo -e "$COLOR1─────────────────────�
 echo "" | tee -a /root/akun/trojan/$user.txt
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
-fi
